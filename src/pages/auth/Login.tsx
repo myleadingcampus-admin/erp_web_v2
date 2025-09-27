@@ -1,6 +1,6 @@
 import { useState } from "react"
 import loginRightSideImg from "../../assets/images/login-side-img.png"
-import LoginFormWithOtp from "../../components/LoginWithOtp"
+import LoginFormWithOtp from "../../components/login-with-Otp"
 import LoginForm from "@/components/login-form"
 import { Button } from "@/components/ui/button"
 
@@ -14,7 +14,7 @@ export default function LoginPage() {
             {showOtpLogin ? <LoginFormWithOtp /> : <LoginForm />}
             <Button
               variant="outline"
-              className="w-full bg-[#0575e6] text-white uppercase my-3"
+              className="w-full bg-[#0575e6] text-white uppercase my-3 font-[inter]"
               onClick={() => setShowOtpLogin(!showOtpLogin)}
             >
               {showOtpLogin ? "Login with Email" : "Login with OTP"}
