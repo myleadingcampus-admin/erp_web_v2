@@ -1,6 +1,6 @@
 import { useState } from "react"
-import loginRightSideImg from "../../assets/images/login-side-img.png"
-import LoginFormWithOtp from "../../components/login-form-with-otp"
+import loginRightSideImg from "@/assets/images/login-side-img.png"
+import LoginFormWithOtp from "@/components/login-form-with-otp"
 import LoginForm from "@/components/login-form"
 import { Button } from "@/components/ui/button"
 

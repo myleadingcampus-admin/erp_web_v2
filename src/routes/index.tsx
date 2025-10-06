@@ -1,11 +1,12 @@
 import { Routes, Route } from 'react-router-dom'
 import DashboardLayout from '../layouts/dashboard-layout'
 import PrivateRoutes from './PrivateRoutes'
-import Login from '../pages/auth/login'
-import Register from '../pages/auth/register'
-import ForgetPassword from "../pages/auth/forget-password"
+import Login from '@/pages/auth/login'
+import Register from '@/pages/auth/register'
+import ForgetPassword from "@/pages/auth/forget-password"
 import AuthLayout from '@/layouts/auth-layout'
-import SignUp from '../pages/auth/sign-up'
+import SignUp from '@/pages/auth/sign-up'
+import Dashboard from '@/pages/dashboard/dashboard'
 function AppRoutes() {
   return (
     <Routes>
@@ -17,7 +18,7 @@ function AppRoutes() {
       </Route>
 
         <Route element={<DashboardLayout />}>
-          <Route path="/dashboard" element={<h1>Dashboard</h1>} />
+          <Route path="/dashboard" element={<Dashboard/>} />
           <Route path="/dashboard/profile" element={<h1>Profile</h1>} />
            <Route path="*" element={<h1>NotFound</h1>} />
       </Route>
