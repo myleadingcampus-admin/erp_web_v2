@@ -43,7 +43,7 @@ function Sidebar() {
         <div
           onMouseEnter={() => setIsHover(true)}
           onMouseLeave={() => setIsHover(false)}
-          className="relative h-full flex flex-col px-3 py-4 overflow-y-auto lg:pl-3 pl-14" 
+          className="relative h-full flex flex-col px-3 py-4 overflow-y-auto lg:pl-3 " 
         >
           <a href="/dashboard" className="flex items-center gap-2 pl-4">
             <img src={Logo} alt="logo" className="w-[40px] h-[40px]" />

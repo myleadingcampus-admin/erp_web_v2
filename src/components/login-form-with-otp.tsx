@@ -19,7 +19,7 @@ export function LoginFormWithOtp({
         <h1 className="font-sans text-3xl">Myleading campus ®</h1>
       </div>
       <div className="flex flex-col items-left gap-2 text-left my-5">
-      <h1 className="text-lg font-semibold  font-[inter] text-black uppercase">Login with OTP</h1>
+        <h1 className="text-lg font-semibold  font-[inter] text-black uppercase">Login with OTP</h1>
       </div>
 
       <div className="grid gap-6">
@@ -33,7 +33,7 @@ export function LoginFormWithOtp({
           />
         </div>
         <div className="grid gap-3">
-          <Label>Send OTP via</Label>
+          <Label className="font-[inter] my-2">Send OTP via</Label>
           <RadioGroup
             value={otpOption}
             onValueChange={setOtpOption}
@@ -51,7 +51,7 @@ export function LoginFormWithOtp({
         </div>
         <Button
           type="submit"
-          className="w-full bg-[#3366ff] text-white uppercase font-[inter]"
+          className="w-full bg-[#3366ff] text-white uppercase font-[inter] h-[44px]"
         >
           Send OTP
         </Button>

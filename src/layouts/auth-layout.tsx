@@ -1,7 +1,7 @@
 import { Navigate, Outlet } from 'react-router-dom'
 
 const AuthLayout = () => {
-  const isLoggedIn = true
+  const isLoggedIn = false
   if (isLoggedIn) {
     return <Navigate to="/dashboard" replace />
   }
