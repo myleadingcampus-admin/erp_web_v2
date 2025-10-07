@@ -76,9 +76,9 @@ export function CalendarCard() {
           <span>Sa</span>
           <span>Su</span>
         </div>
-        <div className="grid grid-cols-7 gap-2 text-center">
+        <div className="grid grid-cols-7 gap-2  text-center">
           {prevDays.map((day, index) => (
-            <span key={`prev-${index}`} className="text-muted-foreground opacity-50 p-2 rounded-full">
+            <span key={`prev-${index}`} className="text-muted-foreground opacity-50 p-2  rounded-full">
               {day}
             </span>
           ))}

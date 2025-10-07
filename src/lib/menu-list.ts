@@ -2,7 +2,7 @@ import {
   Tag,
   Users,
   Settings,
-  Bookmark,
+  ChartBarStacked,
   SquarePen,
   LayoutGrid,
 } from "lucide-react";
@@ -60,8 +60,8 @@ export function getMenuList(pathname: string): Group[] {
         },
         {
           href: "/categories",
-          label: "Categories",
-          icon: Bookmark
+          label:"Categories",
+          icon: ChartBarStacked
         },
         {
           href: "/tags",
